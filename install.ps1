@@ -76,6 +76,7 @@ try
 	$spotifySetupFilePath = Join-Path -Path $PWD -ChildPath 'SpotifyFullSetup.exe'
 	$uri = 'https://download.scdn.co/SpotifyFullSetup.exe'
 	Get-File -Uri $uri -TargetFile "$spotifySetupFilePath"
+}
 catch
 {
 	Write-Output $_
